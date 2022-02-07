@@ -6,7 +6,7 @@ Location    :    Bangalore
 
 
 
-##Summary
+Summary
 •	To create REST API's using SpringBoot
 •	To create REST API's for two models Team and Player. These models have one to many relationship.
 •	Basically, a team has many players (one to many). You have to create (CRUD) endpoints in spring boot

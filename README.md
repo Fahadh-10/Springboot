@@ -1,6 +1,6 @@
 # Springboot
 Assignment given by cliff.ai
-Name        :   Mohamed Fahadh N
+Name        :    Mohamed Fahadh N
 Date        :    02/07/2022
 Location    :    Bangalore
 
@@ -12,14 +12,14 @@ Summary
 •	Basically, a team has many players (one to many). You have to create (CRUD) endpoints in spring boot
 
 
-                              Team                                                           Player
+                              Team                                                            Player
                                        
-                               id                                                               id
-                              name                                                             name
-                             location                                                           age
-                            created_at                                                        created_at
-                            updated_at                                                        updated_at
-                                                                                               team_id
+                               id                                                              id
+                              name                                                            name
+                             location                                                          age
+                            created_at                                                       created_at
+                            updated_at                                                       updated_at
+                                                                                              team_id
 
 
 Endpoints
@@ -30,40 +30,6 @@ Endpoints
 5.	List - Team , Player add pagination
 6.	Find players by team id and Find team by player id
 
-Table of Contents
-
-
-	Summary	
-
-	Introduction	
-
-	Tools Used
-
-	Spring Boot Download
-
-	Eclipse	
-
-	com.demo.api.controller	
-
-	PlayerController
-
-	TeamController	
-
-	Com.demo.api.repository
-
-	PlayerRepository
-
-	TeamRespository
-
-	Com.demo.db.dto
-
-	PlayerDto
-
-	TeamDto
-
-	REST API (Postman)	
-
-	GIT HUB
 
 Introduction
 •	 To create a REST API using Spring Boot, need to download a Maven project from the chrome browser. 
@@ -76,7 +42,6 @@ Introduction
 •	By performing CRUD operation in Postman we will get unique URL for every resourse.
 •	After that convert Java object to JDBC Library and need to initialize then we can perform any of the database language.
  
-
 
 Tools used
 •	Eclipse
@@ -95,11 +60,11 @@ Eclipse
 
 PlayerController
 •	Controllers used in this package are 
-                                       @RequestMapping
+                            @RequestMapping
                             @RestController
-                             @Autowired
-                         @GetMapping
-                             @PostMapping
+                            @Autowired
+                            @GetMapping
+                            @PostMapping
 •	By using these controllers we import
               import com.demo.api.repository.PlayerRepository;
               import com.demo.db.dto.PlayerDto;
@@ -110,12 +75,12 @@ PlayerController
 
 TeamController
 •	Controllers used in this package are
-                                @RequestMapping
-                                @RestController
-                                @Autowired
-                                @GetMapping
-                                @PostMapping
-                                @PathVariable
+                             @RequestMapping
+                             @RestController
+                             @Autowired
+                             @GetMapping
+                             @PostMapping
+                             @PathVariable
 •	By using these controllers we import
             import com.demo.api.repository.TeamRepository;
 •	By using the controllers here we perform POST and GET operation which is create and read the operations.
@@ -126,7 +91,7 @@ Com.demo.api.repository
 
 PlayerRepository
 •	Controllers used in this package are
-                                 @Component
+                               @Component
 •	By using this controller we import
                     import com.demo.db.dto.PlayerDto;
                     import org.springframework.stereotype.Component;
@@ -139,7 +104,7 @@ PlayerRepository
 
 TeamRepository
 •	Controllers used in this package are
-                                 @Component
+                      @Component
 •	By using this controller we import
                     import com.demo.db.dto.TeamDto;
                     
@@ -162,18 +127,13 @@ TeamDto
 •	Then select getters and setters.
 
 REST API (Postman)
-    TeamAndPlayers
+TeamAndPlayers
 •	Create Player (POST) ----->URL: http://localhost:8080/player/create
 •	Create Team (POST) ------>URL: http://localhost:8080/team/create
 •	List Teams (GET) ------->URL : http://localhost:8080/team/list
 •	List Player (GET) ------->URL : http://localhost:8080/player/list
 •	Get Player (GET) ------->URL : http://localhost:8080/player/1
 •	Get Team (GET) -------->URL : http://localhost:8080/team/1 
-
-
-
-
-
 
 GIT HUB
          Open GITHUB---->Signup---->Create Repository---->Name:Springboot--------->Description: Assignment given by cliff.ai----->Check on the README file------->set the path and upload the file(Springbootrestdemo)---->create accounts for collaborators----->add the document---->add the screenshot on successfully testing endpoint on postman.

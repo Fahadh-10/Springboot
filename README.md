@@ -32,7 +32,7 @@ Endpoints
 
 
 Introduction
-•	 To create a REST API using Spring Boot, need to download a Maven project from the chrome browser. 
+•	 To create a REST API using Spring Boot, need to download a Maven project from the chrome browser.
 •	By using Eclipse(IDE) and import the project.
 •	Run using java application and check whether the build is success or not, if it is success we can proceed to the next step.
 •	 Open pom.xml and check the dependency, if we need to add the dependency we can add additional dependency.
